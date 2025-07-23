@@ -1,0 +1,108 @@
+.crs-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fdf7f2; 
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(182, 143, 107, 0.2);
+  font-family: 'Comic Sans MS', 'Segoe UI', cursive, sans-serif;
+  border: 2px dashed #d2b48c; 
+  position: relative;
+}
+
+.crs-title {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: #5c3b28; 
+  text-align: center;
+  position: relative;
+}
+
+.crs-title::before {
+  content: "🧸";
+  position: absolute;
+  left: -28px;
+  top: 0;
+  font-size: 1.6rem;
+}
+
+.crs-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(120, 90, 70, 0.15);
+}
+
+.crs-table thead {
+  background-color: #f5efe6; 
+}
+
+.crs-table th,
+.crs-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #d8c3a5;
+  font-size: 1.05rem;
+  color: #4b3621;
+}
+
+.crs-table th {
+  font-weight: 600;
+  color: #3e2c1c;
+  background-color: #fffdf9;
+}
+
+.crs-row:hover {
+  background-color: #f7f2ec;
+  transition: background-color 0.3s ease;
+}
+
+.crs-select {
+  padding: 0.5rem 0.75rem;
+  border-radius: 10px;
+  border: 1.8px solid #c2a278;
+  background-color: #fcf7f0;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+  color: #5c3a3a;
+  font-family: 'Poppins', sans-serif;
+}
+
+.crs-select:focus {
+  border-color: #b08b5e;
+  box-shadow: 0 0 6px rgba(176, 139, 94, 0.4);
+  outline: none;
+}
+
+.crs-loading,
+.crs-error {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #4b3621;
+  margin-top: 2rem;
+  font-style: italic;
+}
+
+.crs-role-error {
+  margin-bottom: 1rem;
+  color: #6e3e2f;
+  background-color: #f7e9e2;
+  padding: 0.75rem 1.2rem;
+  border-radius: 10px;
+  border: 1.8px dashed #d4b48c;
+  font-weight: 500;
+  font-family: 'Comic Sans MS', cursive;
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+.crs-role-error::before {
+  content: "🧸";
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.3rem;
+}

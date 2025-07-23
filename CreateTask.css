@@ -1,0 +1,98 @@
+.task_container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fdfaf5; 
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(100, 80, 60, 0.1);
+  font-family: 'Comic Sans MS', 'Segoe UI', cursive, sans-serif;
+  border: 2px dashed #d8c8b8; 
+  position: relative;
+}
+
+.task_form input,
+.task_form textarea,
+.task_form select {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 18px;
+  border: 2px solid #d8c8b8;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fdf9f2;
+  color: #4b3621; /* teddy brown */
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.task_form input:focus,
+.task_form textarea:focus,
+.task_form select:focus {
+  border-color: #c1a98b;
+  box-shadow: 0 0 6px rgba(170, 140, 100, 0.4);
+  outline: none;
+}
+
+.task_form button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #d8b295, #bfa58a);
+  border: none;
+  border-radius: 14px;
+  color: #fffefc;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: 'Comic Sans MS', cursive;
+  box-shadow: 0 8px 16px rgba(140, 110, 90, 0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.task_form button:hover {
+  background: linear-gradient(135deg, #cfa57e, #a88f6b);
+  box-shadow: 0 10px 20px rgba(100, 80, 60, 0.3);
+}
+
+.success_msg {
+  color: #4c3d2c;
+  background-color: #f5eee6; 
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 2px dashed #d8c8b8;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  position: relative;
+  padding-left: 2.4rem;
+}
+
+.success_msg::before {
+  content: "🧸";
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.3rem;
+}
+
+.error_msg {
+  color: #6a3d2b;
+  background-color: #f7e9e1; 
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 2px dashed #d8b6a0;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  position: relative;
+  padding-left: 2.4rem;
+}
+
+.error_msg::before {
+  content: "🧸";
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.3rem;
+}

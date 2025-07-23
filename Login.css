@@ -1,0 +1,149 @@
+.login_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #fff8f0 0%,
+    #f6e7d7 50%,
+    #e8d3bd 100%
+  );
+  font-family: 'Comic Sans MS', 'Poppins', cursive, sans-serif;
+  padding: 20px;
+}
+
+.login_form {
+  background: #fffefc;
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 0 16px 36px rgba(195, 163, 127, 0.3);
+  width: 100%;
+  max-width: 420px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px dashed #dcc2a1;
+}
+
+.login_form:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 48px rgba(180, 150, 110, 0.4);
+}
+
+.Login_Heading {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #7b4b3a;
+  margin-bottom: 2rem;
+  letter-spacing: 1.5px;
+  text-align: center;
+  position: relative;
+}
+
+.Login_Heading::before {
+  content: "🧸";
+  font-size: 2rem;
+  position: absolute;
+  top: -10px;
+  left: -30px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+  width: 100%;
+  padding: 14px 18px;
+  margin-bottom: 20px;
+  border: 2px solid #cfb293;
+  border-radius: 14px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #5a3f2d;
+  background-color: #fefaf6;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input::placeholder {
+  color: #8b6e56;
+  font-weight: 400;
+  font-style: italic;
+}
+
+input:focus {
+  outline: none;
+  border-color: #a67c52;
+  box-shadow: 0 0 10px rgba(166, 124, 82, 0.5);
+  background-color: #fdf5ee;
+}
+
+.Error_Message {
+  color: #7a4d3a;
+  background-color: #f7e6d5;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  margin: 0.5rem 0;
+  text-align: left;
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+.Error_Message::before {
+  content: "🧸";
+  position: absolute;
+  left: 0.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.3rem;
+}
+
+.success_message {
+  color: #4a3326;
+  background-color: #e8dbc8;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  margin: 0.5rem 0;
+  text-align: left;
+}
+
+button {
+  width: 100%;
+  padding: 16px 20px;
+  background: linear-gradient(135deg, #d2a679 0%, #c6977e 100%);
+  border: none;
+  border-radius: 16px;
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.35s ease, box-shadow 0.35s ease;
+  box-shadow: 0 8px 16px rgba(153, 108, 72, 0.3);
+}
+
+button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #b98960 0%, #9d755f 100%);
+  box-shadow: 0 10px 25px rgba(127, 84, 58, 0.4);
+}
+
+button:disabled {
+  background: #e5d3bf;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+@media (max-width: 480px) {
+  .login_form {
+    padding: 40px 30px;
+    border-radius: 18px;
+  }
+
+  .Login_Heading {
+    font-size: 2rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 14px 16px;
+  }
+}

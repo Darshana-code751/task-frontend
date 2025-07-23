@@ -1,0 +1,39 @@
+.customised_button {
+    display: block; 
+    width: 100%;    
+    border: 2px dashed #c9b7a6;
+    background-color: #d6c1aa;
+    color: #3e2f1c;
+    padding: 14px 22px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    text-align: center; 
+    margin: 1rem 0;
+    font-family: 'Comic Sans MS', 'Segoe UI', cursive;
+    box-shadow: 0 6px 12px rgba(168, 142, 110, 0.35);
+    position: relative;
+}
+
+.customised_button::before {
+    content: "🧸";
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.3rem;
+}
+
+.customised_button:hover {
+    background-color: #ede3d4;
+    color: #5b4632;
+    box-shadow: 0 8px 20px rgba(122, 99, 72, 0.3);
+    border-color: #bba993;
+}
+
+.customised_button:focus {
+    box-shadow: 0 0 0 4px rgba(181, 157, 124, 0.4);
+}

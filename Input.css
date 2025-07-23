@@ -1,0 +1,20 @@
+.Customised_Input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  border: 2px solid #d4bfa5; 
+  border-radius: 1rem;
+  box-sizing: border-box;
+  background-color: #fdf6ec; 
+  font-family: 'Comic Neue', 'Comic Sans MS', cursive, sans-serif;
+  transition: all 0.3s ease;
+  outline: none;
+  color: #5a3e2b; 
+}
+
+.Customised_Input:focus {
+  border-color: #b89c79; 
+  box-shadow: 0 0 0 4px rgba(200, 170, 120, 0.3);
+  background-color: #f9f1e7; 
+}

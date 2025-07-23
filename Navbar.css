@@ -1,0 +1,70 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #fdf3e7 0%, #e6d5b8 50%, #c8bba2 100%);
+    color: #5c4326;
+    box-shadow: 0 6px 15px rgba(100, 80, 50, 0.1);
+    border-radius: 0 0 1.5rem 1.5rem;
+    font-family: 'Comic Neue', cursive, sans-serif;
+}
+
+.navbar-section {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link,
+.navbar-title {
+    color: #5c4326;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    position: relative;
+    transition: color 0.3s ease, transform 0.2s ease;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    background-color: rgba(255, 248, 230, 0.6);
+}
+
+.nav-link:hover,
+.active-link {
+    color: #a47c48;
+    background-color: rgba(255, 239, 208, 0.7);
+    transform: scale(1.05);
+}
+
+.nav-link::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0%;
+    background-color: #d0a878;
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.logout-btn-nav {
+    background-color: #a67c52;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 30px;
+    border: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    font-family: 'Comic Neue', cursive;
+}
+
+.logout-btn-nav:hover {
+    background-color: #8b5e3c;
+    transform: scale(1.05);
+}
